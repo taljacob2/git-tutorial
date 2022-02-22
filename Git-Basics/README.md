@@ -94,24 +94,7 @@ Changes to be committed:
 
 ## Configure Settings For Git To Use Vscode As The Default Editor
 
-- ### Configure `--global` settings
-	Run the command:
-	```
-	git config --global --edit
-	```
-	and add the following lines:
-	```
-	[core]
-	  editor = code -w -n
-	[diff]
-	  tool = vscode
-	[difftool "vscode"]
-	  cmd = code -w -n --diff $LOCAL $REMOTE
-	[merge]
-	  tool = vscode
-	[mergetool "vscode"]
-	  cmd = code -w -n $MERGED
-	```
+Before continuing, make sure you [Configure Settings For Git To Use Vscode As The Default Editor](Config/Editor-Difftool-Mergetool/Configure-Settings-For-Git-To-Use-Vscode-Basic.md)
 
 ## Let's `commit` the files:
 ```
