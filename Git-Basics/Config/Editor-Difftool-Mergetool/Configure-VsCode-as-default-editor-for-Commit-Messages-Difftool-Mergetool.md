@@ -22,10 +22,7 @@
 > - `-n` is optional, and tells `git` to open *vscode* in a new-window.
 
 ### In case you want to configure a custom path to the editor in Windows:
-You need to replace the word `code` with `'PATH_TO_EXE_OF_VSCODE'`.
-> Note:
-> - You need to surround the path with *single-quotes* `''`.
-> - The slashes in the path should be *forward-slashes* `/`.
+You need to replace the word `code` with *Path to '.exe' of VsCode*.
 
 For example:
 ```
@@ -40,8 +37,11 @@ For example:
 [mergetool "vscode"]
   cmd = "'C:/Users/Tal/AppData/Local/Programs/Microsoft VS Code/Code.exe'" -w -n $MERGED
 ```
+> Note:
+> - You need to surround the path with *single-quotes* `''`.
+> - The slashes in the path should be *forward-slashes* `/`.
 
-or
+Or another example:
 
 ```
 [core]
